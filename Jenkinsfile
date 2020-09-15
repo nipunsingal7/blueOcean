@@ -5,7 +5,7 @@ pipeline{
        
              stage('clean')                                                
              {  steps{
-                       sh 'mvn clean'
+                       echo 'mvn clean'
                      } 
              
              }
@@ -13,7 +13,7 @@ pipeline{
              
              stage('test')
              {  steps{
-                       sh 'mvn test'                                          
+                       echo 'mvn test'                                          
                      }                                                       
              
              }
@@ -21,7 +21,7 @@ pipeline{
              
              stage('build')
              {  steps{
-                       sh 'mvn install'
+                       echo 'mvn install'
                      } 
              
              }
